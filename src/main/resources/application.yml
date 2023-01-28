@@ -1,0 +1,16 @@
+micronaut:
+  application:
+    name: demo
+netty:
+  default:
+    allocator:
+      max-order: 3
+---
+logger:
+  levels:
+    example.micronaut.controllers: INFO
+endpoints:
+  loggers:
+    enabled: true
+    sensitive: false
+    write-sensitive: false
